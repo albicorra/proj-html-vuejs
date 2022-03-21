@@ -23,9 +23,15 @@ export default {
 </script>
 
 <style lang="scss">
+@import '@fortawesome/fontawesome-free/css/all.css';
+@import './assets/scss/common.scss';
+@import './assets/scss/layout.scss';
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
 }
 </style>

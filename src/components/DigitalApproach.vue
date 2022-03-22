@@ -84,7 +84,7 @@ export default {
         
         .information-digital{
             text-align: center;
-            font-weight: 800;
+            font-weight: 700;
             font-size: 34px;
             margin-bottom: 50px;
         }
@@ -105,6 +105,12 @@ export default {
                 color: #1FAD96;
                 border: 2px solid #EEEEEE;
             }
+
+            .green-button.light:hover{
+                background-color: #3F3A64;
+                color: #fff;
+            }
+
         }
 
     }

@@ -10,7 +10,7 @@ ul, li{
 }
   
 img{
-    max-width: 100%;
+    width: 100%;
 }
   
 a{
@@ -24,5 +24,10 @@ input, select:focus-visible{
 
 .container-small{
     width: 1180px;
+    margin: 0 auto;
+}
+
+.container-large{
+    width: 1580px;
     margin: 0 auto;
 }

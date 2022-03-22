@@ -26,6 +26,7 @@ export default {
 @import '@fortawesome/fontawesome-free/css/all.css';
 @import './assets/scss/common.scss';
 @import './assets/scss/layout.scss';
+@import './assets/scss/mixin.scss';
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

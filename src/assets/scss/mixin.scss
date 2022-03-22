@@ -1,0 +1,34 @@
+/* button */
+
+.green-button{
+    border-radius: 5px;
+    background-color: #1FAD96;
+    color: #fff;
+    padding: 20px 40px;
+    font-weight: 700;
+    border: none;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.green-button:hover{
+    background-color: #3F3A64;
+    color: #fff;
+}
+
+/* subtitle */
+.subtitle{
+    color: #20ad96;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+/* title */
+.big-title{
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 56px;
+    color: #333333;
+    margin-bottom: 20px;
+}

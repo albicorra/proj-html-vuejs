@@ -78,6 +78,10 @@ export default {
     align-items: center;
     height: 80px;
     background-color: #fff;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    box-shadow: 0px 15px 20px rgb(0 0 0 / 20%);;
 
     .logo{
       padding: 20px 20px 20px 140px;
@@ -122,7 +126,7 @@ export default {
       }
 
       .search-bar{
-        padding: 32px 20px;
+        padding: 31px 20px;
         height: 100%;
         border: none;
         width: 180px;

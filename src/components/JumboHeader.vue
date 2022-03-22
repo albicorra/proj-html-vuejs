@@ -2,8 +2,8 @@
   <div class="jumbo-wrapper">
     <div class="container-small jumbo-header">
         <div class="title">
-            <h4>New Challenges, New Skills</h4>
-            <h1>Build your own life coaching buisness</h1>
+            <h4 class="subtitle">New Challenges, New Skills</h4>
+            <h1 class="big-title">Build your own life coaching buisness</h1>
             <p>Whole-Life coaching for committed entrepreneurs</p>
             <button class="green-button">Get started today</button>
         </div>
@@ -31,6 +31,7 @@ export default {
     background-repeat: no-repeat;
     background-position: 70% center;
     background-size: auto;
+    margin-top: 80px;
 
   
     .jumbo-header{
@@ -41,21 +42,6 @@ export default {
         .title{
             width: 50%;
             padding-right:120px;
-
-            h4{
-                color: #20ad96;
-                font-size: 24px;
-                font-weight: 500;
-                margin-bottom: 20px;
-            }
-
-            h1{
-                font-size: 48px;
-                font-weight: 800;
-                line-height: 56px;
-                color: #333333;
-                margin-bottom: 20px;
-            }
 
             p{
                 font-size: 18px;

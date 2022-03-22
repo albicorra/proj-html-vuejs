@@ -8,12 +8,6 @@
             <h4>{{price}}</h4>
             <p>{{text}}</p>
         </div>
-
-        <div class="button-discover">
-            <span>Discover now  </span>
-            <i class="fa-solid fa-arrow-right"></i>
-        </div>
-
     </div>
 </template>
 
@@ -30,29 +24,40 @@ export default {
 
 <style scoped lang="scss">
     .card{
-        width: 18%;
+        width: 23%;
         display: flex;
         flex-direction: column;
         align-items: center;
         overflow: hidden;
-        border-radius: 10px;
+        border-radius: 5px;
         cursor: pointer;
         background-color: #fff;
+        position: relative;
 
         .card-text-wrapper{
             padding: 20px;
-            text-align: center;
+            position: absolute;
+            top: 50%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient( to top, rgba(0,0,0,0.9), rgba(0,0,0,0));
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
 
             h4{
                 font-size: 24px;
-                font-weight: 600;
+                font-weight: 700;
                 margin-bottom: 20px;
-                color: #333333;
+                color: #20ad96;
             }
 
             p{
-                font-size: 15px;
-                color: #696969;
+                font-size: 22px;
+                font-weight: 700;
+                color: #fff;
+                margin-bottom: 10px;
             }
         }
 
@@ -71,11 +76,11 @@ export default {
         
     }
 
-    /* .card:hover img{
+    .card:hover img{
         transition: 1s;
         transform: scale(1.1);
     }
-    .card:hover .button-discover{
+    /* .card:hover .button-discover{
     background-color: #1FAD96;
     color: #fff;
     } */

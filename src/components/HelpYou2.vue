@@ -12,7 +12,11 @@
             :price="el.price"
             :text="el.text"/>
 
-            
+            <div class="motivation-text">
+                <p>Take the control of their life back and start doing things to make their dream come true. 
+                    <span>View all courses <i class="fa-solid fa-arrow-right"></i></span>
+                </p>
+            </div>
         </div>
     </div>
   </div>
@@ -35,24 +39,24 @@ export default {
           img: require('../assets/img/course-02-443x600.jpg'),
           id: 1,
         },
-        /* {
-          price: 'free',
+        {
+          price: 'Free',
           text: 'Customer-centric Info-tech Strategies',
-          img: require('../assets/img/home-business-service-slide-03-480x298.jpg'),
+          img: require('../assets/img/stock-full-hd-03-443x600.jpg'),
           id: 2,
         },
         {
           price: '$19.00',
           text: 'Open Programming Courses for everyone: Pyton',
-          img: require('../assets/img/home-business-service-slide-03-480x298.jpg'),
+          img: require('../assets/img/stock-full-hd-04-443x600.jpg'),
           id: 3,
         },
         {
           price: '$26.00',
           text: 'Academic listening and Note-talking',
-          img: require('../assets/img/home-business-service-slide-03-480x298.jpg'),
+          img: require('../assets/img/stock-full-hd-06-443x600.jpg'),
           id: 4,
-        }, */
+        },
       ]
     }
   }
@@ -75,10 +79,27 @@ export default {
                 flex-wrap: wrap;
                 column-gap: 30px;
                 margin-top: 30px;
-                /* margin-bottom: 70px; */
                 width: 100%;
                 justify-content: center;
 
+                .motivation-text{
+                    width: 570px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    text-align: center;
+                    margin-top: 50px;
+                    color: #696969;
+                    cursor: pointer;
+
+                    span{
+                        font-weight: 700;
+                        color: #333;
+                    }
+                }
+
+                .motivation-text:hover span{
+                    text-decoration: underline;
+                }
             }
         }
     }

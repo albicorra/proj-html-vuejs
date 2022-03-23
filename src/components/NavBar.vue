@@ -21,5 +21,10 @@ export default {
           font-size: 16px;
           font-weight: 500;
         }
+
+        a:hover{
+          color: #20ad96;
+          border-bottom: 1px solid #20ad96;
+        }
     }
 </style>

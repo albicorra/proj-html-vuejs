@@ -59,7 +59,7 @@ export default {
         {
           title: 'Consulting',
           text: 'You will get a clear sense of direction for your business, thorough assessment and faster results.',
-          icon: 'fa-solid fa-user-ninja',
+          icon: 'fa-solid fa-life-ring',
           id: 5,
         },
         {

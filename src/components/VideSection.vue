@@ -1,6 +1,7 @@
 <template>
   <div class="section-wrapper">
     <div class="container-large">
+        <img src="../assets/img/maxcoach-shape-07-150x150.png" class="shape-01" alt="">
         <div class="hero-video">
             <div class="image-wrapper">
                 <img src="../assets/img/home-business-video-poster-670x450.jpg" alt="">
@@ -71,9 +72,17 @@ export default {
 
         .container-large{
             display: flex;
-            padding: 50px;
+            padding: 100px 50px;
             align-items: center;
+            position: relative;
             
+            .shape-01{
+                width: 170px;
+                position: absolute;
+                bottom: 0;
+                left: 0px;
+            }
+
             .hero-video{
                 width: 50%;
                 padding: 40px;

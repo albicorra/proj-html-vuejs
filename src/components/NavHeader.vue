@@ -10,8 +10,8 @@
     </ul>
 
     <div class="search">
-        <img src="../assets/img/en.png" alt="">
-        <select name="" class="language-select">
+        <img :src="flag" alt="">
+        <select v-model="valueSelect" @change="this.flag" name="" class="language-select">
           <option value="en">English</option>
           <option value="de">Deutsch</option>
           <option value="fr">Français</option>
@@ -34,6 +34,20 @@ export default {
   },
   data () {
     return {
+      valueSelect: 'en',
+
+      flagImg: [
+        {
+          src: require('../assets/img/en.png')
+        },
+        {
+          src: require('../assets/img/de.png')
+        },
+        {
+          src: require('../assets/img/fr.png')
+        },
+      ],
+
       menuItems: [
         {
           item: 'Home',
@@ -66,6 +80,17 @@ export default {
           id: 6
         },
       ]
+    }
+  },
+  computed: {
+    flag: function(){
+      if (this.valueSelect == 'en') {
+        return this.flagImg[0].src
+      }else if (this.valueSelect == 'de'){
+        return this.flagImg[1].src
+      }else{
+        return this.flagImg[2].src
+      }
     }
   }
 }

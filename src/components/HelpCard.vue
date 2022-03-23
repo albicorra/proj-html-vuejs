@@ -33,7 +33,8 @@ export default {
         width: 31%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: space-between;
+        align-items:center;
         overflow: hidden;
         border-radius: 10px;
         cursor: pointer;

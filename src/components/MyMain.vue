@@ -5,6 +5,8 @@
     <HelpYou2/>
     <VideoSection/>
     <EventSection/>
+    <PeopleSection/>
+    <NewslettersSection/>
   </div>
 </template>
 
@@ -14,6 +16,8 @@ import HelpYou from './HelpYou.vue'
 import HelpYou2 from './HelpYou2.vue'
 import VideoSection from './VideSection.vue'
 import EventSection from './EventSection'
+import PeopleSection from './PeopleSection'
+import NewslettersSection from './NewslettersSection'
 
 export default {
   name: 'MyMain',
@@ -22,7 +26,9 @@ export default {
     HelpYou,
     HelpYou2,
     VideoSection,
-    EventSection
+    EventSection,
+    PeopleSection,
+    NewslettersSection
   }
 }
 </script>

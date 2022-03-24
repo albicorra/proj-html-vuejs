@@ -27,7 +27,7 @@ export default {
 @import './assets/scss/common.scss';
 @import './assets/scss/layout.scss';
 @import './assets/scss/mixin.scss';
-@import './assets/scss/mediaquery.scss';
+/* @import './assets/scss/mediaQueryNavbar.scss'; */
 
 
 #app {

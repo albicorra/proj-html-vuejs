@@ -80,8 +80,11 @@ export default {
         transition: 1s;
         transform: scale(1.1);
     }
-    /* .card:hover .button-discover{
-    background-color: #1FAD96;
-    color: #fff;
-    } */
+
+    @media screen and (max-width: 1200px){
+        .card{
+            width: 65%;
+            margin-bottom: 50px;
+        }
+    }
 </style>

@@ -47,4 +47,14 @@ export default {
         }
     }
 }
+
+@media screen and (max-width: 768px){
+    .information-digital-card{
+        width: 48%;
+
+        i{
+            
+        }
+    }
+}
 </style>

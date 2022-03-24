@@ -30,13 +30,14 @@ export default {
 
 <style scoped lang="scss">
     .card{
-        width: 33%; 
+        width: 30.9%; 
         padding: 30px 30px;
         display: flex;
         flex-direction: column;
         background-color: #fff;
         border-radius: 5px;
         opacity: 60%;
+        
 
         .text-container{
             margin-bottom: 50px;
@@ -85,6 +86,14 @@ export default {
 
     .card.active{
         opacity: 100%;
+    }
+
+    @media screen and (max-width: 1200px){
+        .card{
+            width: 100%;
+            margin: 50px 0px;
+            
+        }
     }
 
 </style>

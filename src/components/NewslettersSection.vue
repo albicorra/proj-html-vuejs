@@ -93,4 +93,14 @@ export default {
             }
         }
     }
+
+    @media screen and (max-width: 1200px){
+        .shape-02{
+            display: none;
+        }
+
+        .shape-03{
+            display: none;
+        }
+    }
 </style>

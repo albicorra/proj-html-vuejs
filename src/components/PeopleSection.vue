@@ -82,11 +82,13 @@ export default {
       align-items: center;
       column-gap: 40px;
       margin: 50px 0px 30px 0px;
+      flex-wrap: wrap;
     }
 
     .circle-wrapper{
       display: flex;
       align-items: center;
+      
 
 
       .circle{

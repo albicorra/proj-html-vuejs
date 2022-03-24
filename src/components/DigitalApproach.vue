@@ -2,7 +2,7 @@
   <div class="container-small section-wrapper">
     
         <h4 class="subtitle">Let’s Dream Big Together</h4>
-        <h2 class="information-digital">We are pioneers of the digital approach, using leading-edge technology to simplify procedures and apply executive coaching in the new age of digitalization.</h2>
+        <h2 class="information-digital" id="information-digital">We are pioneers of the digital approach, using leading-edge technology to simplify procedures and apply executive coaching in the new age of digitalization.</h2>
     
         <div class="card-wrapper">
             
@@ -75,6 +75,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
     .section-wrapper{
         display: flex;
         justify-content: center;
@@ -113,6 +114,18 @@ export default {
 
         }
 
+    }
+
+    @media screen and (max-width: 1200px){
+      #information-digital{
+        font-size: 28px;
+      }
+    }
+
+    @media screen and (max-width: 768px){
+      #information-digital{
+        font-size: 24px;
+      }
     }
 
 </style>

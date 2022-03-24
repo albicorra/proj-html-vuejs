@@ -83,4 +83,11 @@ export default {
     background-color: #1FAD96;
     color: #fff;
     }
+
+    @media screen and (max-width: 1200px){
+        .card{
+            width: 98%;
+            margin-bottom: 50px;
+        }
+    }
 </style>

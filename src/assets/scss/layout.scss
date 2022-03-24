@@ -31,3 +31,23 @@ input, select:focus-visible{
     width: 1580px;
     margin: 0 auto;
 }
+
+
+@media screen and (max-width: 1200px){
+    .container-small{
+        width: 768px
+    }
+
+    .container-large{
+        width: 1000px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container-small{
+        width: 550px;
+    }
+    .container-large{
+        width: 680px;
+    }
+}

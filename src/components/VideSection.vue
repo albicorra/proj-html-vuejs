@@ -2,14 +2,14 @@
   <div class="section-wrapper">
     <div class="container-large">
         <img src="../assets/img/maxcoach-shape-07-150x150.png" class="shape-01" alt="">
-        <div class="hero-video">
+        <div class="hero-video" id="hero-video">
             <div class="image-wrapper">
                 <img src="../assets/img/home-business-video-poster-670x450.jpg" alt="">
                 <img src="../assets/img/icon-youtube-play.png" class="icon-youtube" alt="">
             </div>
         </div>
 
-        <div class="text-wrapper">
+        <div class="text-wrapper" id="text-wrapper">
             <h2 class="title">To Thrive In Business Today, You’ll Need a Good Plan</h2>
             <div v-for="el in textInformation" :key="el.id" class="information-wrapper">
                 <h4 @click="activeText(el.id)" :class="el.classElement"><i class="fa-solid fa-circle-chevron-down"></i>{{el.title}}</h4>
@@ -154,5 +154,27 @@ export default {
                 }
 
         }
+    }
+
+    @media screen and (max-width: 1200px){
+      .container-large{
+        flex-direction: column;
+
+        #hero-video{
+          width: 100%;
+        }
+
+        #text-wrapper{
+          width: 100%;
+
+          .title{
+            font-size: 35px;
+          }
+
+          h4{
+            font-size: 20px;
+          }
+        }
+      }
     }
 </style>

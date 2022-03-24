@@ -32,3 +32,37 @@
     color: #333333;
     margin-bottom: 20px;
 }
+
+@media screen and (max-width: 1200px){
+    .big-title{
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 36px;
+        color: #333333;
+        margin-bottom: 15px;
+    }
+
+    .subtitle{
+        color: #20ad96;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .big-title{
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+        color: #333333;
+        margin-bottom: 15px;
+    }
+
+    .subtitle{
+        color: #20ad96;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 25px;
+    }
+}

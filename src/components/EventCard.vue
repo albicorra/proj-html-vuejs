@@ -86,5 +86,10 @@ export default {
         color: #fff;
     }
 
+    @media screen and (max-width: 768px){
+        .event-wrapper{
+            width: 100%;
+        }
+    }
 
 </style>

@@ -1,15 +1,15 @@
 <template>
   <div class="jumbo-wrapper">
     <div class="container-small jumbo-header">
-        <div class="title">
+        <div class="title" id="title">
             <h4 class="subtitle">New Challenges, New Skills</h4>
             <h1 class="big-title">Build your own life coaching buisness</h1>
             <p>Whole-Life coaching for committed entrepreneurs</p>
             <button class="green-button">Get started today</button>
         </div>
 
-        <div class="hero-img">
-            <img src="../assets/img/home-business-hero-avatar.png" alt="">
+        <div class="hero-img-wrapper">
+            <img src="../assets/img/home-business-hero-avatar.png" id="img-hero" alt="">
         </div>
     </div>
   </div>
@@ -54,7 +54,7 @@ export default {
 
         }
 
-        .hero-img{
+        .hero-img-wrapper{
             width: 50%;
             height: 100%;
             display: flex;
@@ -74,5 +74,31 @@ export default {
         }
     }
   }
+
+  @media screen and (max-width: 1200px){
+    .jumbo-header{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+
+        #title{
+            padding: 100px 0px;
+            
+            p{
+                font-size: 16px;
+            }
+        }
+
+        #img-hero{
+            width: 250px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    #hero-img{
+        width: 200px;
+    }
+}
   
 </style>

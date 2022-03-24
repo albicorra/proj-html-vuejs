@@ -5,6 +5,7 @@
     </div>
 
     <ul class="navbar" :class="menuActive">
+        <div id="bg-purple"></div>
         <NavBar v-for="(el) in menuItems" :key="el.id"
         :item="el.item"/>
     </ul>
@@ -109,6 +110,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
   .container-navbar{
     display: flex;
     justify-content: space-between;
@@ -131,6 +133,16 @@ export default {
     .navbar{
       display: flex;
       align-items: center;
+
+      div{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #3f3a64d7;
+        display: none;
+      }
     }
 
     .search{
@@ -184,5 +196,45 @@ export default {
     }
   }
 
-  
+@media screen and (max-width: 1200px) {
+  /* navbar */
+  .navbar{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+    height: 100vh;
+    width: 380px;
+    visibility: hidden;
+    background-image: url('../assets/img/mobile-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 30px;
+    box-shadow: -8px 10px 10px rgba(0,0,0,0.5);
+
+    #bg-purple{
+      display: block;
+    }
+    
+  }
+
+  .navbar.active{
+    visibility: visible;
+  }
+
+  #button{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .search > img,
+  .search > .language-select,
+  .search > .icon-user,
+  .search > .search-bar{
+    display: none;
+  }
+    
+}  
 </style>

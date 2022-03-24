@@ -4,7 +4,7 @@
         <img src="../assets/img/dark-logo.png" alt="">
     </div>
 
-    <ul class="navbar">
+    <ul class="navbar" :class="menuActive">
         <NavBar v-for="(el) in menuItems" :key="el.id"
         :item="el.item"/>
     </ul>
@@ -19,6 +19,8 @@
         <i class="fa-regular fa-circle-user icon-user"></i>
         <input type="text" placeholder="Search.." class="search-bar">
         <i class="fa-solid fa-magnifying-glass icon-user"></i>
+
+        <button class="button-menu" id="button" @click="showMenu"><i class="fa-solid fa-bars"></i></button>
     </div>
 
   </nav>
@@ -35,6 +37,7 @@ export default {
   data () {
     return {
       valueSelect: 'en',
+      menuActive: '',
 
       flagImg: [
         {
@@ -91,6 +94,15 @@ export default {
       }else{
         return this.flagImg[2].src
       }
+    },
+  }, 
+  methods:{
+    showMenu: function() {
+      if (this.menuActive == '') {
+        return this.menuActive = 'active'
+      }else if (this.menuActive == 'active'){
+        return this.menuActive = ''
+      }
     }
   }
 }
@@ -106,7 +118,7 @@ export default {
     position: fixed;
     z-index: 5;
     width: 100%;
-    box-shadow: 0px 15px 20px rgb(0 0 0 / 20%);;
+    box-shadow: 0px 15px 20px rgb(0 0 0 / 20%);
 
     .logo{
       padding: 20px 20px 20px 140px;
@@ -158,6 +170,19 @@ export default {
         border-left: 1px solid #eceeef;
         font-size: 16px;
       }
+
+      .button-menu{
+        border: none;
+        font-size: 20px;
+        padding: 10px;
+        height: 80px;
+        background-color: #fff;
+        cursor: pointer;
+        margin-left: 10px;
+        display: none;
+      }
     }
   }
+
+  
 </style>

@@ -175,7 +175,7 @@ export default {
       }
 
       .search-bar{
-        padding: 31px 20px;
+        padding: 30px 20px;
         height: 100%;
         border: none;
         width: 180px;
